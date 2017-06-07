@@ -47,6 +47,7 @@
       $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
       $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
     </script>
+    <script src="data/localStorage.js"></script>
   </head>
   <body>
     <div id="base" class="">
@@ -289,7 +290,7 @@
       <div id="u3316" class="ax_default primary_button">
         <div id="u3316_div" class=""></div>
         <!-- Unnamed () -->
-        <div id="u3317" class="text" style="visibility: visible;">
+        <div id="u3317" class="text" style="visibility: visible;" onclick="addLocal()">
           <p><span>SAVE</span></p>
         </div>
       </div>
@@ -841,4 +842,16 @@
       <div id="u3430_ref" class="reference_page"></div>
     </div>
   </body>
+  <script>
+      //save按钮
+      function addLocal() {
+          var storage = window.localStorage;
+          if(storage.getItem("u3428_img")==null){
+              alert("save complete");
+              saveToStorage();
+          }else{
+              alert("this game is already exist");
+          }
+      }
+  </script>
 </html>

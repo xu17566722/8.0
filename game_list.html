@@ -47,6 +47,7 @@
       $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
       $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
     </script>
+    <script src="data/localStorage.js"></script>
   </head>
   <body>
     <div id="base" class="">
@@ -448,7 +449,7 @@
       <div id="u1556" class="ax_default primary_button">
         <div id="u1556_div" class=""></div>
         <!-- Unnamed () -->
-        <div id="u1557" class="text" style="visibility: visible;">
+        <div id="u1557" class="text" style="visibility: visible;" onclick="clearLocalStorage()">
           <p><span>REMOVE</span></p>
         </div>
       </div>
@@ -457,14 +458,14 @@
       <div id="u1558" class="ax_default primary_button">
         <div id="u1558_div" class=""></div>
         <!-- Unnamed () -->
-        <div id="u1559" class="text" style="visibility: visible;">
+        <div id="u1559" class="text" style="visibility: visible;" onclick="clearLocalStorageALL()">
           <p><span>REMOVE ALL</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Image) -->
       <div id="u1560" class="ax_default image">
-        <img id="u1560_img" class="img " src="images/main_page/u28.jpg"/>
+        <img id="u1560_img" class="img "  onerror="this.style.display='none'"/>
         <!-- Unnamed () -->
         <div id="u1561" class="text" style="display: none; visibility: hidden">
           <p><span></span></p>
@@ -473,7 +474,7 @@
 
       <!-- Unnamed (Image) -->
       <div id="u1562" class="ax_default image">
-        <img id="u1562_img" class="img " src="images/main_page/u30.jpg"/>
+        <img id="u1562_img" class="img "  onerror="this.style.display='none'"/>
         <!-- Unnamed () -->
         <div id="u1563" class="text" style="display: none; visibility: hidden">
           <p><span></span></p>
@@ -482,7 +483,7 @@
 
       <!-- Unnamed (Image) -->
       <div id="u1564" class="ax_default image">
-        <img id="u1564_img" class="img " src="images/main_page/u32.jpg"/>
+        <img id="u1564_img" class="img "  onerror="this.style.display='none'"/>
         <!-- Unnamed () -->
         <div id="u1565" class="text" style="display: none; visibility: hidden">
           <p><span></span></p>
@@ -491,7 +492,7 @@
 
       <!-- Unnamed (Image) -->
       <div id="u1566" class="ax_default image">
-        <img id="u1566_img" class="img " src="images/main_page/u34.jpg"/>
+        <img id="u1566_img" class="img "  onerror="this.style.display='none'"/>
         <!-- Unnamed () -->
         <div id="u1567" class="text" style="display: none; visibility: hidden">
           <p><span></span></p>
@@ -500,7 +501,7 @@
 
       <!-- Unnamed (Image) -->
       <div id="u1568" class="ax_default image">
-        <img id="u1568_img" class="img " src="images/main_page/u36.png"/>
+        <img id="u1568_img" class="img "  onerror="this.style.display='none'"/>
         <!-- Unnamed () -->
         <div id="u1569" class="text" style="display: none; visibility: hidden">
           <p><span></span></p>
@@ -509,7 +510,7 @@
 
       <!-- Unnamed (Image) -->
       <div id="u1570" class="ax_default image">
-        <img id="u1570_img" class="img " src="images/main_page/u38.jpg"/>
+        <img id="u1570_img" class="img "  onerror="this.style.display='none'"/>
         <!-- Unnamed () -->
         <div id="u1571" class="text" style="display: none; visibility: hidden">
           <p><span></span></p>
@@ -518,7 +519,7 @@
 
       <!-- Unnamed (Image) -->
       <div id="u1572" class="ax_default image">
-        <img id="u1572_img" class="img " src="images/main_page/u68.png"/>
+        <img id="u1572_img" class="img "  onerror="this.style.display='none'"/>
         <!-- Unnamed () -->
         <div id="u1573" class="text" style="display: none; visibility: hidden">
           <p><span></span></p>
@@ -527,7 +528,7 @@
 
       <!-- Unnamed (Image) -->
       <div id="u1574" class="ax_default image">
-        <img id="u1574_img" class="img " src="images/main_page/u70.jpg"/>
+        <img id="u1574_img" class="img "  onerror="this.style.display='none'"/>
         <!-- Unnamed () -->
         <div id="u1575" class="text" style="display: none; visibility: hidden">
           <p><span></span></p>
@@ -536,7 +537,7 @@
 
       <!-- Unnamed (Image) -->
       <div id="u1576" class="ax_default image">
-        <img id="u1576_img" class="img " src="images/main_page/u72.jpg"/>
+        <img id="u1576_img" class="img "  onerror="this.style.display='none'"/>
         <!-- Unnamed () -->
         <div id="u1577" class="text" style="display: none; visibility: hidden">
           <p><span></span></p>
@@ -545,7 +546,7 @@
 
       <!-- Unnamed (Image) -->
       <div id="u1578" class="ax_default image">
-        <img id="u1578_img" class="img " src="images/main_page/u74.png"/>
+        <img id="u1578_img" class="img "  onerror="this.style.display='none'"/>
         <!-- Unnamed () -->
         <div id="u1579" class="text" style="display: none; visibility: hidden">
           <p><span></span></p>
@@ -554,7 +555,7 @@
 
       <!-- Unnamed (Image) -->
       <div id="u1580" class="ax_default image">
-        <img id="u1580_img" class="img " src="images/main_page/u76.jpg"/>
+        <img id="u1580_img" class="img "  onerror="this.style.display='none'"/>
         <!-- Unnamed () -->
         <div id="u1581" class="text" style="display: none; visibility: hidden">
           <p><span></span></p>
@@ -563,12 +564,14 @@
 
       <!-- Unnamed (Image) -->
       <div id="u1582" class="ax_default image">
-        <img id="u1582_img" class="img " src="images/main_page/u78.png"/>
+        <img id="u1582_img" class="img "  onerror="this.style.display='none'"/>
         <!-- Unnamed () -->
         <div id="u1583" class="text" style="display: none; visibility: hidden">
           <p><span></span></p>
         </div>
       </div>
     </div>
+	
+	<script src="data/localStorage.js"></script>
   </body>
 </html>
