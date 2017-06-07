@@ -81,12 +81,14 @@ function saveToStorage() {
 
 var u1560_img = document.getElementById("u1560_img");
 var u1562_img = document.getElementById("u1562_img");
+var u1564_img = document.getElementById("u1564_img");
 var u1566_img = document.getElementById("u1566_img");
 var u1568_img = document.getElementById("u1568_img");
 var u1570_img = document.getElementById("u1570_img");
 var u1572_img = document.getElementById("u1572_img");
 var u1574_img = document.getElementById("u1574_img");
 var u1576_img = document.getElementById("u1576_img");
+var u1578_img = document.getElementById("u1578_img");
 var u1582_img = document.getElementById("u1582_img");
 var u1580_img = document.getElementById("u1580_img");
 
